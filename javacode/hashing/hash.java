@@ -1,7 +1,9 @@
 package javacode.hashing;
 
+import java.util.HashMap;
 import java.util.Scanner;
 // int arr can be of 1e6 size locally and 1e7 globally 
+// for char hashing (lowercase) just do hash[charArr[i]-'a'] of size 26 or just use 256 if all characters are present
 public class hash {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
@@ -19,3 +21,19 @@ public class hash {
         sc.close();
     }
 }
+
+class Solution {
+    public int mostFrequentElement(int[] nums) {
+        HashMap<Integer,Integer> freq = new HashMap<>();
+        int max = -1;
+        for(int i : nums){
+            int value = freq.getOrDefault(i, 0)+1;
+            freq.put(i, value);
+            if(value>max){
+                max = i;
+            }
+        }
+        return max;
+    }
+}
+
