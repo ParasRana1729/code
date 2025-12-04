@@ -1,5 +1,5 @@
 package javacode.arrayc;
-
+// Leetcide 1752
 public class checkIfArrayIsSorted {
     public boolean check(int[] nums) {
         int size = nums.length;
