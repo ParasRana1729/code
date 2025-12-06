@@ -1,5 +1,5 @@
 package javacode.arrayc;
-// Leetcide 1752
+// Leetcode 1752 sliding window
 public class checkIfArrayIsSorted {
     public boolean check(int[] nums) {
         int size = nums.length;
