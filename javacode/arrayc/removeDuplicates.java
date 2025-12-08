@@ -1,5 +1,5 @@
 package javacode.arrayc;
-// Leetcide 26
+// Leetcode 26
 class Solution {
     public int removeDuplicates(int[] nums) {
        int i = 0;
