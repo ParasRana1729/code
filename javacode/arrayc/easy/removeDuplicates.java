@@ -1,4 +1,4 @@
-package javacode.arrayc;
+package javacode.arrayc.easy;
 
 /**
  * Leetcode 26: Remove Duplicates from Sorted Array
