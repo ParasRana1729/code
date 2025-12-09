@@ -1,5 +1,3 @@
-package javacode.arrayc.medium;
-
 import java.util.Arrays;
 
 /**
@@ -47,7 +45,8 @@ class SortColors {
                 mid++;
             } else if (nums[mid] == 1) {
                 mid++;
-            } else { // nums[mid] == 2
+            } else {
+                // nums[mid] == 2
                 // Swap nums[mid] and nums[high]
                 int temp = nums[mid];
                 nums[mid] = nums[high];
@@ -62,22 +61,22 @@ class SortColors {
     public static void main(String[] args) {
         SortColors solution = new SortColors();
 
-        int[] nums1 = {2, 0, 2, 1, 1, 0};
+        int[] nums1 = { 2, 0, 2, 1, 1, 0 };
         System.out.println("Original: " + Arrays.toString(nums1));
         solution.sortColors(nums1);
         System.out.println("Sorted:   " + Arrays.toString(nums1)); // Expected: [0, 0, 1, 1, 2, 2]
 
-        int[] nums2 = {2, 0, 1};
+        int[] nums2 = { 2, 0, 1 };
         System.out.println("Original: " + Arrays.toString(nums2));
         solution.sortColors(nums2);
         System.out.println("Sorted:   " + Arrays.toString(nums2)); // Expected: [0, 1, 2]
 
-        int[] nums3 = {0};
+        int[] nums3 = { 0 };
         System.out.println("Original: " + Arrays.toString(nums3));
         solution.sortColors(nums3);
         System.out.println("Sorted:   " + Arrays.toString(nums3)); // Expected: [0]
 
-        int[] nums4 = {1, 2, 0};
+        int[] nums4 = { 1, 2, 0 };
         System.out.println("Original: " + Arrays.toString(nums4));
         solution.sortColors(nums4);
         System.out.println("Sorted:   " + Arrays.toString(nums4)); // Expected: [0, 1, 2]

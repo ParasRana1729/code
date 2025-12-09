@@ -1,5 +1,3 @@
-package javacode.arrayc.easy;
-
 public class longestSubarraySumKTwoPointers {
 
     // Function to find the length of the longest subarray with sum K
@@ -34,7 +32,7 @@ public class longestSubarraySumKTwoPointers {
     }
 
     public static void main(String[] args) {
-        int[] a = {2, 3, 5, 1, 9};
+        int[] a = { 2, 3, 5, 1, 9 };
         int k = 10;
         int len = solve(a, k);
         System.out.println("The length of the longest subarray is: " + len);

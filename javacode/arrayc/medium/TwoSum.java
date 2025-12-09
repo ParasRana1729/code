@@ -1,7 +1,5 @@
-package javacode.arrayc.medium;
-
-import java.util.HashMap;
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * Leetcode 1: Two Sum
@@ -20,22 +18,23 @@ import java.util.Arrays;
  * Space Complexity: O(N) - The extra space required depends on the number of items stored in the hash table, which stores at most N elements.
  */
 class TwoSum {
+
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         HashMap<Integer, Integer> data = new HashMap<>();
-        for(int i = 0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             int req = target - nums[i];
-            if(data.containsKey(req)){
-                return new int[]{i, data.get(req)};
+            if (data.containsKey(req)) {
+                return new int[] { i, data.get(req) };
             }
             data.put(nums[i], i);
         }
-        return new int[]{-1, -1};
+        return new int[] { -1, -1 };
     }
 
     public static void main(String[] args) {
         TwoSum solution = new TwoSum();
-        int[] nums = {2, 7, 11, 15};
+        int[] nums = { 2, 7, 11, 15 };
         int target = 9;
         int[] result = solution.twoSum(nums, target);
         System.out.println("Indices: " + Arrays.toString(result)); // Expected output: [1, 0] or [0, 1]

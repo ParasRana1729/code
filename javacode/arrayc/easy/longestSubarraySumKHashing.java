@@ -1,4 +1,3 @@
-package javacode.arrayc.easy;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +19,7 @@ public class longestSubarraySumKHashing {
             }
 
             // Case 2: The subarray starts somewhere in the middle
-            // If (sum - k) exists in the map, it means the sum of the subarray 
+            // If (sum - k) exists in the map, it means the sum of the subarray
             // from map.get(sum - k) + 1 to i is k.
             long rem = sum - k;
             if (preSumMap.containsKey(rem)) {
@@ -29,7 +28,7 @@ public class longestSubarraySumKHashing {
             }
 
             // Case 3: Store the current sum in the map
-            // Only store if it doesn't already exist. We want the leftmost index 
+            // Only store if it doesn't already exist. We want the leftmost index
             // for a given sum to maximize the subarray length.
             if (!preSumMap.containsKey(sum)) {
                 preSumMap.put(sum, i);
@@ -40,7 +39,7 @@ public class longestSubarraySumKHashing {
     }
 
     public static void main(String[] args) {
-        int[] a = {2, 3, 5, 1, 9};
+        int[] a = { 2, 3, 5, 1, 9 };
         int k = 10;
         int len = solve(a, k);
         System.out.println("The length of the longest subarray is: " + len);
