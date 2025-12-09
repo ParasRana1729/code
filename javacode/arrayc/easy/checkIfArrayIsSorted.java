@@ -1,7 +1,6 @@
 /**
  * Leetcode 1752: Check if Array Is Sorted and Rotated
- *
- * Problem: Check if the array was originally sorted non-decreasingly and then rotated.
+ * https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
  *
  * Approach: Simulated Circular Array (Sliding Window)
  * Instead of physically rotating, we check if there exists a contiguous segment of length 'size'

@@ -1,3 +1,7 @@
+/**
+ * Leetcode 325: Maximum Size Subarray Sum Equals k
+ * https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/
+ */
 public class longestSubarraySumKTwoPointers {
 
     // Function to find the length of the longest subarray with sum K

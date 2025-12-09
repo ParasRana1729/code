@@ -1,8 +1,6 @@
 /**
  * Leetcode 26: Remove Duplicates from Sorted Array
- *
- * Problem: Remove duplicates in-place from a sorted array so each unique element appears once.
- * Returns the number of unique elements.
+ * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
  *
  * Approach: Two Pointers
  * - i (Slow Pointer): Points to the last confirmed unique element.
