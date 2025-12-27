@@ -1,5 +1,6 @@
 // In selection sort we find the min element for i to n-1 th index and place it at i
 // O(n^2) avg, best, worst tc
+// not stable, also good for small datasets
 
 import java.util.Arrays;
 
