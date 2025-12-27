@@ -6,13 +6,6 @@ import java.util.*;
 
 class bubble {
 
-    public static void main(String args[]) {
-        int[] arr = { 2, 41, 48, 42, 17, 87, 1, 5, 51 };
-        System.out.println(Arrays.toString(arr));
-        bubbleSort(arr);
-        System.out.println(Arrays.toString(arr));
-    }
-
     static void bubbleSort(int nums[]) {
         boolean swapped = false;
         for (int i = 0; i < nums.length; i++) {
@@ -27,5 +20,12 @@ class bubble {
             }
             if (!swapped) break;
         }
+    }
+
+    public static void main(String args[]) {
+        int[] arr = { 2, 41, 48, 42, 17, 87, 1, 5, 51 };
+        System.out.println(Arrays.toString(arr));
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
