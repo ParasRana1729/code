@@ -10,6 +10,29 @@ public class LL {
         this.size = 0;
     }
 
+    public void insert(int val, int index) {
+        if (index == 0) {
+            insertFirst(val);
+            return;
+        }
+        if (index == size) {
+            insertEnd(val);
+            return;
+        }
+        if (index < 0 || index > size) {
+            System.out.println("invalid index");
+            return;
+        }
+        Node temp = head;
+        int i = 1;
+        while(i++ < index) {
+            temp = temp.next;
+        }
+        Node node = new Node(val, temp.next);
+        temp.next = node;
+        size++;
+    }
+
     public void insertFirst(int val) {
         Node node = new Node(val);
         node.next = head;
