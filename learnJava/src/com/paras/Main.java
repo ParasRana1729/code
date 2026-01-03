@@ -10,6 +10,7 @@ public class Main {
         list.insert(66, 1);
         list.display();
         System.out.println(list.deleteFirst() + " is deleted");
+        System.out.println(list.deleteLast() + " is deleted");
         list.display();
     }
 }
