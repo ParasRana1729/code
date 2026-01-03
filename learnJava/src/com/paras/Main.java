@@ -9,5 +9,7 @@ public class Main {
         list.insertEnd(45);
         list.insert(66, 1);
         list.display();
+        System.out.println(list.deleteFirst() + " is deleted");
+        list.display();
     }
 }

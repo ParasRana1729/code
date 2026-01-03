@@ -54,6 +54,16 @@ public class LL {
         size++;
     }
 
+    public int deleteFirst() {
+        int val = head.val;
+        head = head.next;
+        if (head == null) {
+            tail = null;
+        }
+        size--;
+        return val;
+    }
+
     public void display() {
         Node temp = head;
         while (temp != null) {
