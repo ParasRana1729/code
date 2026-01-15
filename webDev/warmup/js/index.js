@@ -1,62 +1,62 @@
-// const randomeNumber = [2, 4, 3, 5, 8, 1, 6, 7];
+const randomeNumber = [2, 4, 3, 5, 8, 1, 6, 7];
 
-// for (let i = 0; i < randomeNumber.length; i++) {
-//     if (randomeNumber[i] % 2 === 0) {
-//         console.log(randomeNumber[i]);
-//     }
-// }
+for (let i = 0; i < randomeNumber.length; i++) {
+    if (randomeNumber[i] % 2 === 0) {
+        console.log(randomeNumber[i]);
+    }
+}
 
-// const allUsers = [
-//     { firstName: "John", gender: "Male", age: 25 },
-//     { firstName: "Jane", gender: "Female", age: 17 }
-// ]
+const allUsers = [
+    { firstName: "John", gender: "Male", age: 25 },
+    { firstName: "Jane", gender: "Female", age: 17 }
+]
 
-// for (let i = 0; i < allUsers.length; i++) {
-//     if (allUsers[i].gender == "Female") {
-//         console.log(allUsers[i].firstName);
-//     }
-// }
+for (let i = 0; i < allUsers.length; i++) {
+    if (allUsers[i].gender == "Female") {
+        console.log(allUsers[i].firstName);
+    }
+}
 
 // callback:- a function passed as an argument to another function
 
-// function calculate(num1, num2, operation) {
-//     return operation(num1, num2);
-// }
+function calculate(num1, num2, operation) {
+    return operation(num1, num2);
+}
 
-// function add(a, b) {
-//     return a + b;
-// }
+function add(a, b) {
+    return a + b;
+}
 
-// function multiply(a, b) {
-//     return a * b;
-// }
+function multiply(a, b) {
+    return a * b;
+}
 
-// console.log(calculate(5, 3, add));
-// console.log(calculate(5, 3, multiply));
+console.log(calculate(5, 3, add));
+console.log(calculate(5, 3, multiply));
 
 // Count from n to 0
 
-// function countDown(n) {
-//     const id = setInterval(() => {
-//         console.log(n);
-//         if (n-- === 0) clearInterval(id);
-//     }, 1000);
-// }
+function countDown(n) {
+    const id = setInterval(() => {
+        console.log(n);
+        if (n-- === 0) clearInterval(id);
+    }, 1000);
+}
 
-// countDown(5);
+countDown(5);
 
-// function countDownSetTimeout(n){
-//     if (n < 0) {
-//         return;
-//     }
-//     setTimeout(() => {
-//         console.log(n);
-//         countDownSetTimeout(--n);
+function countDownSetTimeout(n){
+    if (n < 0) {
+        return;
+    }
+    setTimeout(() => {
+        console.log(n);
+        countDownSetTimeout(--n);
 
-//     }, 1000);
-// }
+    }, 1000);
+}
 
-// countDownSetTimeout(5);
+countDownSetTimeout(5);
 
 // count time it take for setTimout to execute;
 
@@ -66,7 +66,7 @@ function Test() {
     console.log((new Date()) - (startTime));
 }
 
-// String handbook
+// String 
 
 // String: length, indexOf(), lastIndexOf(), slice(), substring(), replace(),
 // split(), trim(), toUpperCase(), toLowerCase(), etc.
