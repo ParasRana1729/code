@@ -19,17 +19,41 @@
 
 // callback:- a function passed as an argument to another function
 
-function calculate(num1, num2, operation) {
-    return operation(num1, num2);
+// function calculate(num1, num2, operation) {
+//     return operation(num1, num2);
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// function multiply(a, b) {
+//     return a * b;
+// }
+
+// console.log(calculate(5, 3, add));
+// console.log(calculate(5, 3, multiply));
+
+// Count from n to 0
+
+function countDown(n) {
+    const id = setInterval(() => {
+        console.log(n);
+        if (n-- === 0) clearInterval(id);
+    }, 1000);
 }
 
-function add(a, b) {
-    return a + b;
+countDown(5);
+
+function countDownSetTimeout(n){
+    if (n < 0) {
+        return;
+    }
+    setTimeout(() => {
+        console.log(n);
+        countDownSetTimeout(--n);
+
+    }, 1000);
 }
 
-function multiply(a, b) {
-    return a * b;
-}
-
-console.log(calculate(5, 3, add));
-console.log(calculate(5, 3, multiply));
+countDownSetTimeout(5);
