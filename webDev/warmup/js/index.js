@@ -17,7 +17,7 @@
 //     }
 // }
 
-// callback
+// callback:- a function passed as an argument to another function
 
 function calculate(num1, num2, operation) {
     return operation(num1, num2);
