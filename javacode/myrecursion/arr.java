@@ -2,6 +2,14 @@ import java.util.Arrays;
 
 public class arr {
 
+    static void printn(n) {
+        if (n == 0) {
+            return 0;
+        }
+        System.out.println(n);
+        printn(n-1);
+    }
+
     static void reverse(int[] list, int l, int r) {
         if (l >= r) {
             return;
@@ -13,8 +21,9 @@ public class arr {
     }
 
     public static void main(String args[]) {
-        int[] list = { 1, 2, 3, 4, 5 };
-        reverse(list, 0, 4);
-        System.out.println(Arrays.toString(list));
+        // int[] list = { 1, 2, 3, 4, 5 };
+        // reverse(list, 0, 4);
+        // System.out.println(Arrays.toString(list));
+        printn(10);
     }
 }
