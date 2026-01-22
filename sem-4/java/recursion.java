@@ -1,4 +1,10 @@
 public class recursion {
+
+    static int fact(int n) {
+        if (n == 0) return 1;
+        return n * fact(n-1);
+    }
+
     static void printn(int n) {
         if (n == 0) {
             return;
@@ -8,6 +14,7 @@ public class recursion {
     }
 
     public static void main(String args[]) {
-        printn(10);
+        // printn(10);
+        System.out.println(fact(5)); 
     }
 }
