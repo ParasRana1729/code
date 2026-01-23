@@ -2,9 +2,9 @@ import java.util.Arrays;
 
 public class arr {
 
-    static void printn(n) {
+    static void printn(int n) {
         if (n == 0) {
-            return 0;
+            return;
         }
         System.out.println(n);
         printn(n-1);
