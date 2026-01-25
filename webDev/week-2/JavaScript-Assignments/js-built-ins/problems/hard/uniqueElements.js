@@ -19,7 +19,6 @@
 */
 
 function getUniqueElements(arr) {
-  // Your code here
   let sol = [];
   for (let ele of arr) {
     if (!sol.includes(ele)) sol.push(ele);
