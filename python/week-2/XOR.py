@@ -1,17 +1,17 @@
-import numpy as nm
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 
-X = nm.array([
+X = np.array([
     [0, 0],
     [0, 1],
     [1, 0],
     [1, 1]
 ])
 
-Y = nm.array([
+Y = np.array([
     [0],
     [1],
     [1],
