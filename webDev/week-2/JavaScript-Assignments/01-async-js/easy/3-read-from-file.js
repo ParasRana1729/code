@@ -5,3 +5,11 @@
 // Try to do an expensive operation below the file read and see how it affects the output. 
 // Make the expensive operation more and more expensive and see how it affects the output. 
 
+const fs = require('fs');
+fs.readFile("./JavaScript-Assignments/01-async-js/easy/a.txt", "utf-8", (data, err) => {
+    console.log(data);
+})
+
+for (let i = 0; i < 1000000; i++) {
+    console.log(i);
+}
