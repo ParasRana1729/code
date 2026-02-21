@@ -1,5 +1,13 @@
 const fs = require("fs")
 
+function callback(data) {
+    console.log(data);
+}
+
+function callbackErr(err) {
+    console.log(err);
+}
+
 function fsReadFilePromisified(filepath, encoding) {
     return new Promise(
         (resolve, reject) => {
@@ -14,14 +22,6 @@ function fsReadFilePromisified(filepath, encoding) {
             })
         }
     )
-}
-
-function callback(data) {
-    console.log(data);
-}
-
-function callbackErr(err) {
-    console.log(err);
 }
 
 fsReadFilePromisified("./a.txt", "utf-8")
