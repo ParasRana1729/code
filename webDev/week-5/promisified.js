@@ -42,4 +42,19 @@ function setTimeoutPromisified(ms) {
 }
 
 setTimeoutPromisified(1000)
-    .then(() => console.log("setTimeout Promisified"));
+    .then(() => console.log("setTimeout Promisified"))
+    .finally(() => console.log("always run"))
+
+// async and await
+// The async and await syntax in JavaScript provides a way to write asynchronous code that looks and behaves like synchronous code, making it easier to read and maintain. 
+async function solve() {
+    await setTimeoutPromisified(1000);
+    console.log("hi");
+    await setTimeoutPromisified(3000);
+    console.log("hello");
+    await setTimeoutPromisified(5000);
+    console.log("hi there");
+}
+
+solve();
+console.log("last")
